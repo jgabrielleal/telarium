@@ -149,12 +149,16 @@ body {
   position: relative;
 }
 .main .grid {
-  height: 262.43px;
   padding: 68px 28.87px 84.77px 28.87px;
   border-radius: 20.99px;
   border: 0.87px 0px 0px 0px;
   background: rgb(18, 22, 19);
   border: 0.87px solid rgb(65, 72, 69);
+}
+@media screen and (min-width: 768px) {
+  .main .grid {
+    height: 262.43px;
+  }
 }
 .main .grid .hero-verde-grid {
   width: 39.99px;

@@ -140,12 +140,14 @@ body {
         }
     }
     .grid {
-        height: 262.43px;
         padding: 68px 28.87px 84.77px 28.87px;
         border-radius: 20.99px;
         border: 0.87px 0px 0px 0px;
         background: rgba(18, 22, 19, 1);
         border: 0.87px solid rgba(65, 72, 69, 1);
+        @media screen and (min-width: 768px){
+            height: 262.43px;
+        }
         .hero-verde-grid{
             width: 39.99px;
             height: 21.87px;
