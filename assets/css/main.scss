@@ -1,8 +1,8 @@
-*{
+* {
     font-family: "Noto Sans", serif;
 }
 
-body{
+body {
     background: rgba(6, 9, 8, 1) !important;
 }
 
@@ -12,55 +12,66 @@ body{
     background-size: contain;
     background-position: top;
     background-repeat: no-repeat;
-    .navbar{
+
+    .navbar {
         border-bottom: 1px solid rgba(255, 255, 255, 1);
-        .navbar-nav{
-            .nav-item{
-                .nav-link{
+
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
                     color: white !important;
                     font-weight: 500 !important;
                     text-transform: uppercase;
                 }
             }
         }
-        .btn-abrirconta{
+
+        .btn-abrirconta {
             font-weight: 900 !important;
             text-transform: uppercase;
-            @media screen and (min-width: 768px){
+
+            @media screen and (min-width: 768px) {
                 margin-left: 1rem;
             }
         }
     }
-    .hero{
+
+    .hero {
         margin-top: 150px;
-        h6{
+
+        h6 {
             height: 30px;
-            line-height: 21.95px;            ;
+            line-height: 21.95px;
             background: rgba(255, 255, 255, 0.1);
             border-radius: 136px;
             color: white !important;
             font-size: 16px;
             font-weight: 300;
-            @media screen and (min-width: 768px){
+
+            @media screen and (min-width: 768px) {
                 width: 333px;
             }
         }
-        h1{
+
+        h1 {
             margin-top: 40px;
             margin-bottom: 40px;
             font-weight: 900;
             color: white !important;
             font-size: 50px;
-            @media screen and (min-width: 768px){
+
+            @media screen and (min-width: 768px) {
                 width: 800px;
             }
-            span{
+
+            span {
                 background: linear-gradient(96.84deg, #75FB4C 1.12%, #2CA36D 95.97%);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
         }
-        button{
+
+        button {
             background: linear-gradient(96.84deg, #75FB4C 1.12%, #2CA36D 95.97%);
             box-shadow: 0px 4px 76px 0px rgba(255, 255, 255, 0.25);
             border-radius: 15px;
@@ -70,16 +81,19 @@ body{
             padding-right: 40px;
             font-weight: 900;
             text-transform: uppercase;
-            @media screen and (min-width: 768px){
+
+            @media screen and (min-width: 768px) {
                 width: 401px;
                 height: 49px;
             }
         }
     }
-    .web{
+
+    .web {
         margin-top: 150px;
     }
-    .btn-abrir-conta{
+
+    .btn-abrir-conta {
         background: linear-gradient(96.84deg, #75FB4C 1.12%, #2CA36D 95.97%);
         width: 472px;
         height: 54px;
@@ -87,12 +101,60 @@ body{
         left: 416.79px;
         padding: 12px 40px 12px 40px;
         border-radius: 15px;
-        opacity: 0px;       
+        opacity: 0px;
         font-size: 20px;
         font-weight: 900;
         line-height: 30.05px;
         text-align: center;
         text-underline-position: from-font;
-        text-decoration-skip-ink: none; 
+        text-decoration-skip-ink: none;
+    }
+}
+
+.main {
+    margin-top: 14rem;
+    position: relative;
+
+    .background-redondo {
+        width: 900px;
+        position: absolute;
+        top: -500px;
+    }
+
+    .nossos-ativos {
+        h1 {
+            font-size: 40px;
+            font-weight: 900;
+            line-height: 53.6px;
+            text-align: center;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: rgba(255, 255, 255, 1);
+        }
+
+        div {
+            height: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 3rem;
+            img {
+                width: 50px;
+                height: 50px;
+                position: relative;
+            }
+        }
+    }
+
+    .grid {
+        height: 262.43px;
+        top: 2033.59px;
+        left: 140.66px;
+        padding: 97.7px 28.87px 84.77px 28.87px;
+        gap: 6.82px;
+        border-radius: 20.99px;
+        border: 0.87px 0px 0px 0px;
+        opacity: 0px;
+        background: rgba(18, 22, 19, 1);
     }
 }

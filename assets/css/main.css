@@ -100,4 +100,47 @@ body {
   text-underline-position: from-font;
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
+}
+
+.main {
+  margin-top: 14rem;
+  position: relative;
+}
+.main .background-redondo {
+  width: 900px;
+  position: absolute;
+  top: -500px;
+}
+.main .nossos-ativos h1 {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 53.6px;
+  text-align: center;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgb(255, 255, 255);
+}
+.main .nossos-ativos div {
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+.main .nossos-ativos div img {
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+.main .grid {
+  height: 262.43px;
+  top: 2033.59px;
+  left: 140.66px;
+  padding: 97.7px 28.87px 84.77px 28.87px;
+  gap: 6.82px;
+  border-radius: 20.99px;
+  border: 0.87px 0px 0px 0px;
+  opacity: 0px;
+  background: rgb(18, 22, 19);
 }/*# sourceMappingURL=main.css.map */
