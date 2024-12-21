@@ -254,6 +254,11 @@ body {
   background-repeat: no-repeat;
   margin-top: 150px;
 }
+@media screen and (min-width: 768px) {
+  .footer {
+    height: 300px;
+  }
+}
 .footer span {
   color: rgba(255, 255, 255, 0.755);
   font-size: 14px;

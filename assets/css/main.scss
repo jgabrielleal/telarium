@@ -236,6 +236,9 @@ body {
     background-size: 100%;
     background-repeat: no-repeat;
     margin-top: 150px;
+    @media screen and (min-width: 768px) {
+        height: 300px;
+    }
     span{
         color: rgba(255, 255, 255, 0.755);
         font-size: 14px;
