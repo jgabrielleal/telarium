@@ -186,4 +186,62 @@ body {
   .main .grid .conteudo-grid .span1-grid {
     font-size: 43px;
   }
+}
+.main .registre-block {
+  margin-top: 150px;
+  background-image: url("../img/touro-footer.png") !important;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 768px) {
+  .main .registre-block {
+    height: 500px;
+  }
+}
+.main .registre-block h1 {
+  padding-top: 150px;
+  font-size: 53.6px;
+  font-weight: 900;
+  line-height: 53.6px;
+  text-align: center;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgb(255, 255, 255);
+}
+.main .registre-block h1 span {
+  font-size: 53.6px;
+  font-weight: 900;
+  line-height: 53.6px;
+  text-align: center;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  background: linear-gradient(96.84deg, #75FB4C 1.12%, #2CA36D 95.97%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.main .registre-block div button {
+  top: 3145.52px;
+  left: 391px;
+  padding: 12px 40px 12px 40px;
+  gap: 8px;
+  border-radius: 15px;
+  outline: none;
+  border: 0;
+  opacity: 0px;
+  background: linear-gradient(96.84deg, #75FB4C 1.12%, #2CA36D 95.97%);
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 30.05px;
+  text-align: center;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .main .registre-block div button {
+    width: 472px;
+    height: 54px;
+  }
 }/*# sourceMappingURL=main.css.map */
