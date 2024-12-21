@@ -87,7 +87,7 @@ body {
 .header .btn-abrir-conta {
   background: linear-gradient(96.84deg, #75FB4C 1.12%, #2CA36D 95.97%);
   width: 472px;
-  height: 54px;
+  height: auto;
   top: 1405.05px;
   left: 416.79px;
   padding: 12px 40px 12px 40px;
@@ -101,15 +101,30 @@ body {
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
 }
+@media screen and (min-width: 768px) {
+  .header .btn-abrir-conta {
+    height: 54px;
+  }
+}
 
 .main {
-  margin-top: 14rem;
   position: relative;
 }
+@media screen and (min-width: 768px) {
+  .main {
+    margin-top: 14rem;
+  }
+}
 .main .background-redondo {
-  width: 900px;
-  position: absolute;
-  top: -500px;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .main .background-redondo {
+    width: 900px;
+    position: absolute;
+    top: -500px;
+    display: block !important;
+  }
 }
 .main .nossos-ativos h1 {
   font-size: 40px;
@@ -135,12 +150,31 @@ body {
 }
 .main .grid {
   height: 262.43px;
-  top: 2033.59px;
-  left: 140.66px;
-  padding: 97.7px 28.87px 84.77px 28.87px;
-  gap: 6.82px;
+  padding: 68px 28.87px 84.77px 28.87px;
   border-radius: 20.99px;
   border: 0.87px 0px 0px 0px;
-  opacity: 0px;
   background: rgb(18, 22, 19);
+  border: 0.87px solid rgb(65, 72, 69);
+}
+.main .grid .hero-verde-grid {
+  width: 39.99px;
+  height: 21.87px;
+  max-width: 1401.38px;
+  padding: 0px 7px 0.01px 7px;
+  border-radius: 14px;
+  text-transform: uppercase;
+  color: black !important;
+  font-weight: 500;
+  background: linear-gradient(96.84deg, #75FB4C 1.12%, #2CA36D 95.97%);
+}
+.main .grid .conteudo-grid {
+  font-weight: 300;
+  font-size: 16px;
+  color: rgb(255, 255, 255) !important;
+}
+.main .grid .conteudo-grid .span1-grid {
+  display: block;
+  font-size: 43px;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
 }/*# sourceMappingURL=main.css.map */
