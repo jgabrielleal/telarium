@@ -93,7 +93,6 @@ body {
         }
     }
     .btn-abrir-conta {
-        background: linear-gradient(96.84deg, #75FB4C 1.12%, #2CA36D 95.97%);
         width: 472px;
         height: auto;
         top: 1405.05px;
@@ -143,10 +142,13 @@ body {
             flex-wrap: wrap;
             justify-content: space-around;
             margin-top: 3rem;
+            background: linear-gradient(90deg, rgba(7,12,10,1) 0%, rgba(9,121,120,0) 48%, rgba(7,12,10,1) 100%) !important;
             img {
                 width: 50px;
                 height: 50px;
                 position: relative;
+                margin-top: 1.5rem;
+                z-index: -1;
             }
         }
     }
