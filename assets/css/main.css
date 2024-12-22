@@ -175,6 +175,7 @@ body {
     position: absolute;
     top: -500px;
     display: block !important;
+    max-width: 100%;
   }
 }
 
