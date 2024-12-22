@@ -51,9 +51,10 @@ body {
             margin-bottom: 40px;
             font-weight: 900;
             color: white !important;
-            font-size: 50px;
+            font-size: 30px;
             @media screen and (min-width: 768px) {
                 width: 800px;
+                font-size: 50px;
             }
             span {
                 background: linear-gradient(96.84deg, #75FB4C 1.12%, #2CA36D 95.97%);
@@ -80,6 +81,16 @@ body {
     }
     .web {
         margin-top: 150px;
+        position: relative;
+        @media screen and (min-width: 768px) {
+            img:nth-child(2) {
+                width: 200px;
+                height: 200px;
+                position: absolute;
+                bottom: -100px;
+                right: -70px;
+            }
+        }
     }
     .btn-abrir-conta {
         background: linear-gradient(96.84deg, #75FB4C 1.12%, #2CA36D 95.97%);

@@ -52,11 +52,12 @@ body {
   margin-bottom: 40px;
   font-weight: 900;
   color: white !important;
-  font-size: 50px;
+  font-size: 30px;
 }
 @media screen and (min-width: 768px) {
   .header .hero h1 {
     width: 800px;
+    font-size: 50px;
   }
 }
 .header .hero h1 span {
@@ -83,6 +84,16 @@ body {
 }
 .header .web {
   margin-top: 150px;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .header .web img:nth-child(2) {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: -100px;
+    right: -70px;
+  }
 }
 .header .btn-abrir-conta {
   background: linear-gradient(96.84deg, #75FB4C 1.12%, #2CA36D 95.97%);
