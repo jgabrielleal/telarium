@@ -126,7 +126,7 @@ body {
     position: absolute;
     display: initial;
     bottom: -100px;
-    right: -70px;
+    right: 0;
     animation: girar 5s linear infinite; /* Aplicar a animação */
 
   }
