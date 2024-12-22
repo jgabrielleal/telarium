@@ -86,11 +86,15 @@ body {
   margin-top: 150px;
   position: relative;
 }
+.header .web img:nth-child(2) {
+  display: none;
+}
 @media screen and (min-width: 768px) {
   .header .web img:nth-child(2) {
     width: 200px;
     height: 200px;
     position: absolute;
+    display: initial;
     bottom: -100px;
     right: -70px;
   }

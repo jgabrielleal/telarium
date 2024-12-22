@@ -83,10 +83,12 @@ body {
         margin-top: 150px;
         position: relative;
         img:nth-child(2) {
+            display: none;
             @media screen and (min-width: 768px) {
                 width: 200px;
                 height: 200px;
                 position: absolute;
+                display: initial;
                 bottom: -100px;
                 right: -70px;
             }
