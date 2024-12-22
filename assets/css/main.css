@@ -4,6 +4,9 @@
 
 body {
   background: rgb(6, 9, 8) !important;
+  overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
 }
 
 .header {
@@ -13,26 +16,32 @@ body {
   background-position: top;
   background-repeat: no-repeat;
 }
+
 .header .navbar {
   border-bottom: 1px solid rgb(255, 255, 255);
 }
+
 .header .navbar .navbar-nav .nav-item .nav-link {
   color: white !important;
   font-weight: 500 !important;
   text-transform: uppercase;
 }
+
 .header .navbar .btn-abrirconta {
   font-weight: 900 !important;
   text-transform: uppercase;
 }
+
 @media screen and (min-width: 768px) {
   .header .navbar .btn-abrirconta {
     margin-left: 1rem;
   }
 }
+
 .header .hero {
   margin-top: 150px;
 }
+
 .header .hero h6 {
   height: 30px;
   line-height: 21.95px;
@@ -42,11 +51,25 @@ body {
   font-size: 16px;
   font-weight: 300;
 }
+
+@media screen and (max-width: 500px) {
+  .header .hero h6 {
+    /* height: 30px; */
+    line-height: 21.95px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 136px;
+    color: white !important;
+    font-size: 14px;
+    font-weight: 300
+  }
+}
+
 @media screen and (min-width: 768px) {
   .header .hero h6 {
     width: 333px;
   }
 }
+
 .header .hero h1 {
   margin-top: 40px;
   margin-bottom: 40px;
@@ -54,17 +77,20 @@ body {
   color: white !important;
   font-size: 30px;
 }
+
 @media screen and (min-width: 768px) {
   .header .hero h1 {
     width: 800px;
     font-size: 50px;
   }
 }
+
 .header .hero h1 span {
   background: linear-gradient(96.84deg, #75FB4C 1.12%, #2CA36D 95.97%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .header .hero button {
   background: linear-gradient(96.84deg, #75FB4C 1.12%, #2CA36D 95.97%);
   box-shadow: 0px 4px 76px 0px rgba(255, 255, 255, 0.25);
@@ -76,19 +102,23 @@ body {
   font-weight: 900;
   text-transform: uppercase;
 }
+
 @media screen and (min-width: 768px) {
   .header .hero button {
     width: 401px;
     height: 49px;
   }
 }
+
 .header .web {
   margin-top: 150px;
   position: relative;
 }
+
 .header .web img:nth-child(2) {
   display: none;
 }
+
 @media screen and (min-width: 768px) {
   .header .web img:nth-child(2) {
     width: 200px;
@@ -97,8 +127,11 @@ body {
     display: initial;
     bottom: -100px;
     right: -70px;
+    animation: girar 5s linear infinite; /* Aplicar a animação */
+
   }
 }
+
 .header .btn-abrir-conta {
   width: 472px;
   height: auto;
@@ -113,8 +146,9 @@ body {
   text-align: center;
   text-underline-position: from-font;
   -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
 }
+
 @media screen and (min-width: 768px) {
   .header .btn-abrir-conta {
     height: 54px;
@@ -124,14 +158,17 @@ body {
 .main {
   position: relative;
 }
+
 @media screen and (min-width: 768px) {
   .main {
     margin-top: 14rem;
   }
 }
+
 .main .background-redondo {
   display: none;
 }
+
 @media screen and (min-width: 768px) {
   .main .background-redondo {
     width: 900px;
@@ -140,6 +177,7 @@ body {
     display: block !important;
   }
 }
+
 .main .nossos-ativos h1 {
   font-size: 40px;
   font-weight: 900;
@@ -147,9 +185,10 @@ body {
   text-align: center;
   text-underline-position: from-font;
   -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
   color: rgb(255, 255, 255);
 }
+
 .main .nossos-ativos div {
   height: 100px;
   display: flex;
@@ -158,6 +197,7 @@ body {
   margin-top: 3rem;
   background: linear-gradient(90deg, rgb(7, 12, 10) 0%, rgba(9, 121, 120, 0) 48%, rgb(7, 12, 10) 100%) !important;
 }
+
 .main .nossos-ativos div img {
   width: 50px;
   height: 50px;
@@ -165,6 +205,7 @@ body {
   margin-top: 1.5rem;
   z-index: -1;
 }
+
 .main .grid {
   padding: 68px 28.87px 84.77px 28.87px;
   border-radius: 20.99px;
@@ -172,11 +213,13 @@ body {
   background: rgb(18, 22, 19);
   border: 0.87px solid rgb(65, 72, 69);
 }
+
 @media screen and (min-width: 768px) {
   .main .grid {
     height: 262.43px;
   }
 }
+
 .main .grid .hero-verde-grid {
   width: 39.99px;
   height: 21.87px;
@@ -188,32 +231,44 @@ body {
   font-weight: 500;
   background: linear-gradient(96.84deg, #75FB4C 1.12%, #2CA36D 95.97%);
 }
+
 .main .grid .conteudo-grid {
   font-weight: 300;
   font-size: 16px;
   color: rgb(255, 255, 255) !important;
 }
+
 .main .grid .conteudo-grid .span1-grid {
   display: block;
   font-size: 35px;
   font-weight: 900;
   color: rgb(255, 255, 255);
 }
+
+@media screen and (max-width: 500px) {
+  .main .grid .conteudo-grid .span1-grid {
+    font-size: 1.2rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .main .grid .conteudo-grid .span1-grid {
     font-size: 43px;
   }
 }
+
 .main .registre-block {
   margin-top: 150px;
   background-image: url("../img/touro-footer.png") !important;
   background-repeat: no-repeat;
 }
+
 @media screen and (min-width: 768px) {
   .main .registre-block {
     height: 500px;
   }
 }
+
 .main .registre-block h1 {
   padding-top: 150px;
   font-size: 53.6px;
@@ -222,9 +277,11 @@ body {
   text-align: center;
   text-underline-position: from-font;
   -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
   color: rgb(255, 255, 255);
 }
+
+
 .main .registre-block h1 span {
   font-size: 53.6px;
   font-weight: 900;
@@ -232,11 +289,20 @@ body {
   text-align: center;
   text-underline-position: from-font;
   -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
   background: linear-gradient(96.84deg, #75FB4C 1.12%, #2CA36D 95.97%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+@media screen and (max-width: 500px) {
+
+  .main .registre-block h1,
+  .main .registre-block h1 span {
+    font-size: 35.6px;
+  }
+}
+
 .main .registre-block div button {
   top: 3145.52px;
   left: 391px;
@@ -254,9 +320,10 @@ body {
   text-align: center;
   text-underline-position: from-font;
   -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
   text-transform: uppercase;
 }
+
 @media screen and (min-width: 768px) {
   .main .registre-block div button {
     width: 472px;
@@ -267,6 +334,7 @@ body {
 .footer {
   margin-top: 150px;
 }
+
 @media screen and (min-width: 768px) {
   .footer {
     height: 300px;
@@ -276,11 +344,13 @@ body {
     background-repeat: no-repeat;
   }
 }
+
 .footer span {
   color: rgba(255, 255, 255, 0.755);
   font-size: 14px;
   font-weight: 400;
 }
+
 .footer h5 {
   font-size: 18.92px;
   font-weight: 600;
@@ -288,9 +358,10 @@ body {
   text-align: left;
   text-underline-position: from-font;
   -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
   color: rgba(255, 255, 255, 0.776);
 }
+
 .footer ul li a {
   font-size: 14px;
   font-weight: 400;
@@ -298,15 +369,17 @@ body {
   text-align: left;
   text-underline-position: from-font;
   -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
   color: rgba(255, 255, 255, 0.539);
   text-decoration: none;
   position: relative;
   z-index: 500;
 }
+
 .footer div.social a {
   color: rgba(255, 255, 255, 0.539);
 }
+
 .footer .creditos {
   font-size: 12px;
   font-weight: 400;
@@ -314,6 +387,205 @@ body {
   text-align: center;
   text-underline-position: from-font;
   -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
   color: rgba(255, 255, 255, 0.365);
-}/*# sourceMappingURL=main.css.map */
+}
+
+@media screen and (max-width: 500px) {
+
+  /* Header ajustes */
+  .header {
+    height: auto;
+    /* Ajuste para remover altura fixa */
+    background-size: cover;
+    /* Certifique-se de que a imagem de fundo cubra a área visível */
+  }
+
+  .header .hero {
+    margin-top: 80px;
+    /* Reduzir espaço acima */
+  }
+
+  .header .hero h1 {
+    font-size: 24px;
+    /* Reduzir tamanho da fonte */
+    margin: 20px 0;
+    /* Ajustar margens */
+  }
+
+  .header .hero button {
+    padding: 10px 20px;
+    /* Reduzir espaçamento do botão */
+    font-size: 14px;
+    /* Ajustar tamanho do texto */
+  }
+
+  /* Nossos Ativos */
+  .main .nossos-ativos h1 {
+    font-size: 24px;
+    /* Reduzir tamanho */
+  }
+
+
+  .main .nossos-ativos div img {
+    width: 40px;
+    /* Reduzir ícones */
+    height: 40px;
+  }
+
+  /* Grid ajustes */
+  .main .grid {
+    padding: 20px;
+    /* Reduzir padding */
+    border-radius: 10px;
+    /* Ajustar bordas */
+  }
+
+  /* Registre Block */
+  .main .registre-block h1,
+  .main .registre-block h1 span {
+    font-size: 28px;
+    /* Ajustar fontes */
+    padding-top: 20px;
+    /* Reduzir espaçamento */
+  }
+
+  .main .registre-block div button {
+    width: auto;
+    font-size: 16px;
+    /* Ajustar fonte */
+    padding: 10px 20px;
+    /* Reduzir padding */
+  }
+
+  /* Footer ajustes */
+  .footer {
+    height: auto;
+    /* Altura automática */
+    padding: 20px;
+    /* Adicionar espaçamento */
+  }
+
+  .footer span,
+  .footer h5 {
+    font-size: 12px;
+    /* Reduzir fontes */
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 768px) {
+
+  /* Header ajustes */
+  .header {
+    height: auto;
+    /* Altura automática para adaptar melhor */
+    background-size: cover;
+    /* Cobrir proporcionalmente */
+    background-position: center;
+    /* Centralizar imagem */
+  }
+
+  .header .hero {
+    margin-top: 100px;
+    /* Ajustar margens */
+  }
+
+  .header .hero h1 {
+    font-size: 36px;
+    /* Tamanho intermediário da fonte */
+    margin: 30px 0;
+    /* Ajuste de margens */
+    width: 80vw
+  }
+
+  .header .web img:nth-child(2) {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    display: initial;
+    bottom: -100px;
+    right: 0;
+  }
+
+  .header .hero button {
+    padding: 15px 30px;
+    /* Tamanho ajustado do botão */
+    font-size: 16px;
+    /* Tamanho do texto do botão */
+  }
+
+  /* Nossos Ativos */
+  .main .nossos-ativos h1 {
+    font-size: 32px;
+    /* Tamanho intermediário */
+  }
+
+  .main .nossos-ativos div {
+    flex-direction: row;
+    /* Elementos em linha */
+    justify-content: space-between;
+    /* Espaçamento equilibrado */
+    height: auto;
+  }
+
+  .main .nossos-ativos div img {
+    width: 45px;
+    /* Ícones ajustados */
+    height: 45px;
+  }
+
+  /* Grid ajustes */
+  .main .grid {
+    padding: 30px;
+    /* Padding intermediário */
+    border-radius: 15px;
+    /* Bordas arredondadas ajustadas */
+  }
+
+  /* Registre Block */
+  .main .registre-block h1,
+  .main .registre-block h1 span {
+    font-size: 40px;
+    /* Fontes intermediárias */
+    padding-top: 50px;
+    /* Espaçamento balanceado */
+  }
+
+  .main .registre-block div button {
+    width: 350px;
+    /* Botão menor do que no desktop */
+    font-size: 18px;
+    /* Tamanho do texto ajustado */
+    padding: 12px 30px;
+    height: auto;
+  }
+
+  /* Footer ajustes */
+  .footer {
+    height: auto;
+    /* Altura automática */
+    padding: 30px;
+    /* Adicionar espaçamento */
+  }
+
+  .footer span,
+  .footer h5 {
+    font-size: 14px;
+    /* Ajustar fontes */
+  }
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+    /* Posição inicial */
+  }
+
+  to {
+    transform: rotate(360deg);
+    /* Rotação completa */
+  }
+}
+
+
+/*# sourceMappingURL=main.css.map */
