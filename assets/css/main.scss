@@ -82,8 +82,8 @@ body {
     .web {
         margin-top: 150px;
         position: relative;
-        @media screen and (min-width: 768px) {
-            img:nth-child(2) {
+        img:nth-child(2) {
+            @media screen and (min-width: 768px) {
                 width: 200px;
                 height: 200px;
                 position: absolute;
