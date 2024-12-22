@@ -127,7 +127,8 @@ body {
     display: initial;
     bottom: -100px;
     right: 0;
-    animation: girar 5s linear infinite; /* Aplicar a animação */
+    animation: girar 5s linear infinite;
+    /* Aplicar a animação */
 
   }
 }
@@ -396,7 +397,7 @@ body {
 
   /* Header ajustes */
   .header {
-    height: auto;
+    height: 100vh;
     /* Ajuste para remover altura fixa */
     background-size: cover;
     /* Certifique-se de que a imagem de fundo cubra a área visível */
@@ -421,6 +422,10 @@ body {
     /* Ajustar tamanho do texto */
   }
 
+  .header .web {
+    margin-top: 5rem;
+  }
+
   /* Nossos Ativos */
   .main .nossos-ativos h1 {
     font-size: 24px;
@@ -443,6 +448,11 @@ body {
   }
 
   /* Registre Block */
+  .main .registre-block {
+    margin-top: 5rem;
+
+  }
+
   .main .registre-block h1,
   .main .registre-block h1 span {
     font-size: 28px;
@@ -588,5 +598,35 @@ body {
   }
 }
 
+/* Animação de pulsação */
+@keyframes pulsar {
+
+  0%,
+  100% {
+    transform: scale(1);
+    /* Tamanho normal */
+  }
+
+  50% {
+    transform: scale(1.05);
+    /* Aumenta levemente */
+  }
+}
+
+/* Estilização padrão dos botões */
+.header .hero button,.main .registre-block div button {
+  animation: pulsar 1.5s ease-in-out infinite;
+  /* Animação pulsante */
+  transition: all 0.3s ease;
+  /* Transição suave no hover */
+}
+
+/* Pausar animação no hover */
+.header .hero button:hover,.main .registre-block div button:hover {
+  animation: none;
+  /* Remove animação */
+  transform: scale(1);
+  /* Retorna ao tamanho normal */
+}
 
 /*# sourceMappingURL=main.css.map */
